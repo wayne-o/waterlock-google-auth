@@ -1,6 +1,6 @@
 {
   "name": "waterlock-google-auth",
-  "version": "v0.1.2-rc1",
+  "version": "v0.1.2-rc2",
   "description": "google authentication for waterlock",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "dependencies" : {
     "request": "*",
     "lodash": "*"
-  }, 
+  },
   "devDependencies":{
     "mocha": "*",
     "should": "*",
