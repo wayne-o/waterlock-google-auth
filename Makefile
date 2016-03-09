@@ -13,13 +13,15 @@ test: jshint base
 endif
 
 base:
+
 	@echo "running mocha tests..."
 	@NODE_ENV=test $(MOCHA) \
 	--colors \
     --reporter $(REPORTER) \
     --recursive \
-	
+
 coveralls:
+
 	@echo "running mocha tests with coveralls..."
 	@NODE_ENV=test $(ISTANBUL) \
 	cover ./node_modules/mocha/bin/_mocha \
@@ -33,7 +35,7 @@ coveralls:
 
 jshint:
 	@echo "running lint..."
-	$(JSHINT) lib	
+	$(JSHINT) lib
 
 clean:
 	@echo "clean..."
